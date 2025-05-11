@@ -1,0 +1,13 @@
+diff --git a/android/src/main/java/com/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin.java b/android/src/main/java/com/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin.java
+index original_hash..patched_hash 100644
+--- a/android/src/main/java/com/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin.java
++++ b/android/src/main/java/com/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin.java
+@@ -1030,7 +1030,7 @@
+       Bitmap largeIcon = getBitmapFromSource(largeIconSource, largeIconBitmapSource);
+       Bitmap bigPicture = getBitmapFromSource(bigPictureSource, bigPictureBitmapSource);
+       bigPictureStyle.bigPicture(bigPicture);
+-      bigPictureStyle.bigLargeIcon(null);
++      bigPictureStyle.bigLargeIcon((Bitmap) null);
+       if (largeIcon != null) {
+         bigPictureStyle.bigLargeIcon(largeIcon);
+       }
